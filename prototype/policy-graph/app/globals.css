@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@500;600;700&display=swap");
+
+html,
+body,
+#__next {
+  height: 100%;
+}
+
+body {
+  background-color: #fafafa;
+  color: #0f172a;
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.serif {
+  font-family: "Source Serif 4", "Source Serif Pro", ui-serif, Georgia, serif;
+  font-feature-settings: "ss01", "kern";
+}
+
+/* React Flow overrides — thin gray connector lines */
+.react-flow__edge-path {
+  stroke: #cbd5e1;
+  stroke-width: 1.25;
+}
+
+.react-flow__edge.selected .react-flow__edge-path,
+.react-flow__edge:focus .react-flow__edge-path,
+.react-flow__edge:focus-visible .react-flow__edge-path {
+  stroke: #0b1f3a;
+}
+
+.react-flow__handle {
+  width: 6px;
+  height: 6px;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+}
+
+.react-flow__attribution {
+  background: transparent;
+  font-size: 10px;
+  color: #94a3b8;
+}
+
+.react-flow__background {
+  background-color: #fafafa;
+}
