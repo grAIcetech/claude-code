@@ -31,6 +31,30 @@ Type-check only:
 npm run typecheck
 ```
 
+## Deploy to Vercel (for sharing a public URL)
+
+The prototype lives in a subfolder, so Vercel needs to know that.
+
+1. Go to https://vercel.com/new and import this GitHub repo.
+2. Pick the branch (e.g. `claude/policy-graph-prototype-u6aNd`).
+3. Under **Root Directory**, click **Edit** and set it to
+   `prototype/policy-graph`.
+4. Leave Framework Preset as **Next.js** (auto-detected) and click **Deploy**.
+
+Vercel will give you a public URL like
+`https://policy-graph-<hash>.vercel.app` that anyone can open in a browser —
+no install required.
+
+## Screenshots
+
+See [`docs/screenshots/`](./docs/screenshots) for static images of the
+prototype:
+
+- `01-default-view.png` — landing view, first policy selected.
+- `02-node-selected.png` — a graph node clicked, right rail populated.
+- `03-filter-applied.png` — Requirement type filter turned off.
+- `04-different-policy.png` — second policy selected, graph re-laid-out.
+
 ## Layout
 
 - Top: horizontal placeholder timeline (milestone ticks, no real dates).
